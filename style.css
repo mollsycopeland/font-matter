@@ -1,0 +1,65 @@
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+
+    font-family: "ivymode", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    color: navy;
+    margin-bottom: 20px;
+    font-weight: 700; /* Bold weight */
+    font-family: "ivymode", sans-serif;
+    font-style: normal;
+}
+
+/* Box uses IvyMode Light and changes to Italic on hover */
+.box {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "ivymode", sans-serif;
+    font-weight: 300; /* Light */
+    font-style: normal;
+
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.box:hover {
+    background-color: red;
+    transform: scale(1.2) rotate(10deg);
+    font-style: italic; /* Uses IvyMode Italic */
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border-radius: 50%;
+    margin-top: 20px;
+
+    animation: bounce 2s ease-in-out infinite alternate;
+    font-family: "ivymode", sans-serif;
+    font-weight: 400;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
